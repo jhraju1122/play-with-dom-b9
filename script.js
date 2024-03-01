@@ -43,3 +43,5 @@ ul.insertBefore(li, second);
 // ul.remove();
 
 // manupulate means - sundor vabe system gula use kora 
+const h1 = document.querySelector("h1");
+h1.classList.add("common-class");
