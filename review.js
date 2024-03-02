@@ -1,3 +1,4 @@
+let serialCount = 0;
 document.getElementById("submit-button").addEventListener("click", function(){
     // const inputElement = document.querySelector("textarea")
     // const inputValue = inputElement.value;
@@ -8,8 +9,8 @@ document.getElementById("submit-button").addEventListener("click", function(){
 
     const container = document.getElementById("review");
     const p = document.createElement("p");
-    p.innerText =inputValue;
-    
+    p.innerText = serialCount + ". " + inputValue;
+    serialCount++;
     container.appendChild(p);
     document.querySelector("textarea").value = "";
 
@@ -20,8 +21,8 @@ document.getElementById("submit-button").addEventListener("click", function(){
             console.log(inputValue);
             const container = document.getElementById("review")
             const p =document.createElement("p");
-            p.innerText = inputValue;
             container.appendChild(p);
+           
             document.querySelector("textarea").value = "";
 
         }
